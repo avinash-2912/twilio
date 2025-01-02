@@ -19,7 +19,7 @@
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://twilio-etsg.onrender.com",
   "eslintConfig": {
     "extends": "react-app"
   },

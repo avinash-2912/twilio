@@ -9,10 +9,11 @@ const App = () => {
 
   const handleClick = () => {
     setClicked(true);
-    fetch(`/voice/token?identity=${encodeURIComponent(identity)}`)
+    fetch(`https://twilio-etsg.onrender.com/voice/token?identity=${encodeURIComponent(identity)}`)
       .then(response => response.json())
       .then(({ token }) => setToken(token));
   };
+  
 
   return (
     <div className="app">
